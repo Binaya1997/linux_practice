@@ -1,0 +1,72 @@
+
+#This below project in made for learning purpose to check the knowledged.
+
+
+Create directory structure:
+
+devops_project/
+   ├── logs/
+   ├── scripts/
+   └── backup/
+
+Create file inside logs:
+
+app.log
+
+Add 20 lines of random text to app.log.
+
+Display only last 5 lines.
+
+Count number of lines in file.
+
+Copy app.log into backup folder.
+
+Delete original file.
+
+
+# below are the project used commands
+
+# Created directory structure: 
+
+~$ mkdir -p devops_project/{log,scripts,backup}
+
+# Create app.log file inside logs:
+
+~$ cd devops_project/
+~/devops_project$ cd log/
+~/devops_project/log$ touch app.log
+
+# Add 20 lines of random text to app.log. ( i used small sheckk script by forloop)
+
+for i in {1..20}; do echo $(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | head -c 20); done >> app.log
+
+#Display only last 5 lines.
+
+:~/devops_project/log$ tail -5f app.log
+zBHbmloiQkJqjKxxnO6f
+AZ8cw2O6wvsbkmu9NuYQ
+n7IToslZ0VhzN55JYYkW
+vej91JfU4GkuaB4EBaTx
+KGK5fGH46KTxy0fsLAri
+
+# Count number of lines in file.
+
+~/devops_project/backup$ wc -l app.log
+20 app.log
+
+
+#Copy app.log into backup folder.
+
+~/devops_project/log$ pwd
+/home/binaya-p/devops_project/log
+~/devops_project/log$ cp app.log ../backup
+~/devops_project$ ls -l backup/
+total 4
+-rw-rw-r-- 1 binaya-p binaya-p 420 Feb 24 01:20 app.log
+
+#Delete original file.
+
+binaya-p@binaya-p-VMware-Virtual-Platform:~/devops_project/log$ rm -rv app.log
+removed 'app.log'
+
+
