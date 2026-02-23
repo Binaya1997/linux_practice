@@ -43,11 +43,11 @@ for i in {1..20}; do echo $(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | head -c 20);
 #Display only last 5 lines.
 
 :~/devops_project/log$ tail -5f app.log
-zBHbmloiQkJqjKxxnO6f
-AZ8cw2O6wvsbkmu9NuYQ
-n7IToslZ0VhzN55JYYkW
-vej91JfU4GkuaB4EBaTx
-KGK5fGH46KTxy0fsLAri
+zBHbmloQkJqjKxxnO6f
+AZ8cw2bkmu9NuYQ
+n7IToslZ055JYYkW
+vej91JfUB4EBaTx
+KGK5fGHy0fsLAri
 
 # Count number of lines in file.
 
