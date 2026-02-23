@@ -6,7 +6,7 @@ File system includes file,directories and its related permission.
 
 Some Types of File system
 =========================
-#https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/storage_administration_guide/part-file-systems - To go detail
+#https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/storage_administration_guide/part-file-systems - To go in detail
 
   1 ext3 
   2 ext4
