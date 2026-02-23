@@ -7,16 +7,23 @@ File system includes file,directories and its related permission.
 Some Types of File system
 ==========================
 #https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/storage_administration_guide/part-file-systems - To go in detail
+
 1: ext3 
+
 2: ext4
+
 3: xfs [ Ubuntu,Debian,Fedora,Centos,Redhat ]
+
 4: Btrfs (B - tress fs) [ Open SUSE and SUSE Linux Enterprise Serer ]
+
 5: FAT - #https://www.geeksforgeeks.org/operating-systems/fat-full-form/
 
 How to check your linux Filesystem.
 =====================================
 lsblk-f
+
 df -Th
+
 cat /etc/fstab
 
 XFS vs ext4
